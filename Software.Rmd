@@ -1,0 +1,61 @@
+---
+title: "WILD 542 Tookit"
+author: "Josh Nowak"
+output: 
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float:
+      collapsed: true
+      smooth_scroll: true
+    theme: flatly
+---
+
+## Software
+
+Software is an integral part of statistical analyses.  During this course we will encounter a variety of software.  What follows is a brief explanation of the tools and links to resources.  If you wish to be prepared for our conversations installing and familiarizing yourself with these tools would be a good first step.
+
+### R
+
+R is the statistical computing language that we will use for analyses.  We may supplement with something like JAGS, but R will do the heavy lifting.  R on its own is great, but we can enhance the user experience by using an editor that helps us write code with more style and fewer errors.  A few options for editors include:
+
+- [RStudio](https://www.rstudio.com/products/rstudio/)
+- [Notepad++](https://notepad-plus-plus.org/) + [NppToR Plugin](https://sourceforge.net/projects/npptor/)
+- [Eclipse](https://www.eclipse.org/) + [StatET](http://www.walware.de/goto/statet)
+- [Emacs](https://ess.r-project.org/), [Vim](http://www.vim.org/scripts/script.php?script_id=2628) and many other options exist
+
+*I use both RStudio and Notepad++, but would recommend RStudio and am trying to use it more myself.*
+
+### git + GitHub
+
+Once we have written code a desire often exists to share that code.  GitHub is a web based platform for storing and sharing of version controlled code.  Under the hood it uses git, which is a tough tool to learn, but the pain is worth the ride.  [JennyBC](https://github.com/jennybc) has a great way of teaching and her repository [happy-git-with-r](http://happygitwithr.com/) may be helpful.  A nice way to get started (that won't actually teach you how to use git) is [GitHub desktop](https://desktop.github.com/).  In addition to the basics of keeping us from creating multiple copies of our code, GitHub has tools for project management.  We can manage our projects (read: get organized) using plugins like [ZenHub](https://www.zenhub.com/) or simply using [GitHub's own project boards](https://help.github.com/articles/about-project-boards/).  Project boards also play nicely with [Issues](https://guides.github.com/features/issues/).  Issues are a great way to collaborate with others, but they can also help you keep track of what is going wrong, what is going right and what features you might like to add in the future.  You don't have to adopt these tools for the course, but if I write code for the course or provide materials it will be hosted here (publicly).
+
+_**Whether you want to use GitHub or not you should learn to search the site for code that may be helpful to your project.  These tools are used by nearly all developers and their code resides on the site for you to see, learn from and use.**_
+
+### JAGS
+
+Often we find ourselves needing to expand on models built in R or we simply want the convenience of MCMC, for these tasks we will typically use [JAGS](http://mcmc-jags.sourceforge.net/).  We could use WinBUGS, OpenBUGS, STAN or one of the many packages in R and if those options are of interest we can discuss.  To call JAGS and make sure it integrates well with our other tools we will leverage the [rjags](https://cran.r-project.org/web/packages/rjags/index.html) package either directly or via [R2jags](https://cran.r-project.org/web/packages/R2jags/index.html), [JagsUI](https://cran.r-project.org/web/packages/jagsUI/index.html) or some other package.
+
+### Markdown
+
+R and GitHub let us use markdown to document our work in a simple yet expressive syntax.  This document was written using [rmarkdown](http://rmarkdown.rstudio.com/).  If you are using RStudio then there isn't much to learn.  Simply click on File -> New File -> R Markdown and that will create a template you can then modify.  While setting this up you might realize that your markdown document can be morphed into a pdf, word document, slides for a presentation, a book, a blog or just about anything else you would like to create.  The point of using the tool is to document a reproducible workflow in a transparent manner that tells a coherent story.  If you want to get started with rmarkdown I suggest downloading the [cheat sheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf).  There is no course requirement related to markdown, but I will use it to document coding examples.
+
+### R Packages
+
+A variety of packages will be used during the course.  I will always favor tools in the tidyverse.  You can explore the tidyverse by following this [link](https://www.tidyverse.org/).  
+
+Install the packages in the tidyverse using:
+```{r, eval = F, echo = T}
+  install.packages("tidyverse")
+```
+
+To communicate with JAGS let's start with
+```{r, eval = F, echo = T}
+  install.packages("R2jags")
+```
+
+In addition to the tidyverse (aka hadleyverse) we will use start the course by talking about workflows and package writing.  The tools we will use for this discussion can be installed using
+```{r, eval = F, echo = T}
+  install.packages(c("usethis", "testthat", "roxygen2", "devtools", "tidyverse"))
+```
+
