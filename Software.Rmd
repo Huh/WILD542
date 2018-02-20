@@ -28,9 +28,13 @@ R is the statistical computing language that we will use for analyses.  We may s
 
 ### git + GitHub
 
+The course repository is located at: [https://github.com/Huh/WILD542](https://github.com/Huh/WILD542)
+
 Once we have written code a desire often exists to share that code.  GitHub is a web based platform for storing and sharing of version controlled code.  Under the hood it uses git, which is a tough tool to learn, but the pain is worth the ride.  [JennyBC](https://github.com/jennybc) has a great way of teaching and her repository [happy-git-with-r](http://happygitwithr.com/) may be helpful.  A nice way to get started (that won't actually teach you how to use git) is [GitHub desktop](https://desktop.github.com/).  In addition to the basics of keeping us from creating multiple copies of our code, GitHub has tools for project management.  We can manage our projects (read: get organized) using plugins like [ZenHub](https://www.zenhub.com/) or simply using [GitHub's own project boards](https://help.github.com/articles/about-project-boards/).  Project boards also play nicely with [Issues](https://guides.github.com/features/issues/).  Issues are a great way to collaborate with others, but they can also help you keep track of what is going wrong, what is going right and what features you might like to add in the future.  You don't have to adopt these tools for the course, but if I write code for the course or provide materials it will be hosted here (publicly).
 
 _**Whether you want to use GitHub or not you should learn to search the site for code that may be helpful to your project.  These tools are used by nearly all developers and their code resides on the site for you to see, learn from and use.**_
+
+
 
 ### JAGS
 
