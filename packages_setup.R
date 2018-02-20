@@ -27,6 +27,7 @@
       "glue", "readr", "stringr", "tibble", "broom", "rjags", "R2jags", "coda",
       "jagsUI", "mcmcplots")
     
+    #  Horribly slow
     have <- rownames(installed.packages())
     needed <- setdiff(wild542, have)
 
