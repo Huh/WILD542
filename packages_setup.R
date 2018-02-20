@@ -24,7 +24,8 @@
     
     #  Do you have these?
     wild542 <- c("usethis", "testthat", "dplyr", "tidyr", "purrr", "devtools",
-      "glue", "readr", "stringr", "tibble")
+      "glue", "readr", "stringr", "tibble", "broom", "rjags", "R2jags", "coda",
+      "jagsUI", "mcmcplots")
     
     have <- rownames(installed.packages())
     needed <- setdiff(wild542, have)
